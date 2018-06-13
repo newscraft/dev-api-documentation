@@ -109,9 +109,15 @@ Publisher ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="x-api-key" type="string" required=true %}
-API key provided by platform provider.
+API key provided by platform provider.I
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
