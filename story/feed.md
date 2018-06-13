@@ -2,7 +2,7 @@
 description: Story feed is collections of stories.
 ---
 
-# /feed
+# /story/feed
 
 Don't get confuse with RSS feed or data feed. \(We are lack of terms. Lucky we didn't call it Larry as story collections. - [https://www.youtube.com/watch?v=av9OftW](https://www.youtube.com/watch?v=av9OftW)\)
 

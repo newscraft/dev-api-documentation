@@ -2,7 +2,7 @@
 description: 'This endpoint to retrieve, post and delete story.'
 ---
 
-# /entry
+# /story/entry
 
 {% api-method method="get" host="https://api.newscraft.io/v1" path="/story/entry" %}
 {% api-method-summary %}

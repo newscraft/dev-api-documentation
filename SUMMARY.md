@@ -2,8 +2,8 @@
 
 * [Developer API](README.md)
 * [/story](story/README.md)
-  * [/entry](story/entry.md)
-  * [/feed](story/feed.md)
+  * [/story/entry](story/entry.md)
+  * [/story/feed](story/feed.md)
 * [/media](media.md)
 * [/interact](interact/README.md)
   * [/interact/comment](interact/interact-comment.md)
