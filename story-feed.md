@@ -34,15 +34,8 @@ Publisher ID
 
 {% endapi-method-response-example-description %}
 
-```javascript
-{
-    "items":
-        [
-            "xxx",
-            "yyy",
-            "zzz"
-        ]
-}
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -149,7 +142,7 @@ Get stories for feed
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Will response with list of stories for this feed collection.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -177,8 +170,15 @@ Publisher ID
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "items":
+        [
+            "xxx",
+            "yyy",
+            "zzz"
+        ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -191,7 +191,7 @@ Submit stories for feed
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Send list of stories ID for this feed collection.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -226,6 +226,8 @@ Publisher ID
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+POST with JSON body
 
 ```javascript
 {
