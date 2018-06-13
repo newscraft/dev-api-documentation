@@ -316,6 +316,10 @@ Delete single story
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+{% api-method-parameter name="x-pub-id" type="string" required=false %}
+Publisher ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-api-key" type="string" required=true %}
 
 {% endapi-method-parameter %}
@@ -336,7 +340,7 @@ Delete single story
 {% endapi-method-spec %}
 {% endapi-method %}
 
-Submit the entry with JSON body data.
+
 
 {% api-method method="get" host="https://api.newscraft.io" path="/v1/entry/search" %}
 {% api-method-summary %}
