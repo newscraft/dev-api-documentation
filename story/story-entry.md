@@ -211,15 +211,24 @@ Submit with JSON body
 ```javascript
 {  
    "sid":"999999",
-   "title":"Aizu Test",
-   "cat_str":"news",
-   "author_str":"Reuters",
-   "lang_str":"en",
-   "summary":"Despite Rodman tweeting about impending visit, US president says athlete has not been invited to S&#39;pore. ",
+   "title":"Full title of the story",
+   "title_alt":"Alternate title",
+   "feed_id":"array of feed id",
+   "cat_id":"array of category id",
+   "cat_str":"array of category name",
+   "author_id":"array of author_id",
+   "author_str":"array of author name",
+   "lang_id":"array of lang id",
+   "lang_str":"array of lang name",
+   "source":"(string) CNN",
+   "summary":"(string) Summary for the story ",
    "date_pub":1528552260,
    "date_mod":1528552668,
+   "user_pub":"User ID which publish this story",
+   "user_mod":"User ID which modify this story",
    "status":"published",
-   "content":"<p>Aizu - This is a test content. Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
+   "image_feat":"array of featured images",
+   "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
 ```
 
@@ -268,15 +277,24 @@ Publisher ID
 ```javascript
 {  
    "sid":"999999",
-   "title":"Aizu Test",
-   "cat_str":"news",
-   "author_str":"Reuters",
-   "lang_str":"en",
-   "summary":"Despite Rodman tweeting about impending visit, US president says athlete has not been invited to S&#39;pore. ",
+   "title":"Full title of the story",
+   "title_alt":"Alternate title",
+   "feed_id":"array of feed id",
+   "cat_id":"array of category id",
+   "cat_str":"array of category name",
+   "author_id":"array of author_id",
+   "author_str":"array of author name",
+   "lang_id":"array of lang id",
+   "lang_str":"array of lang name",
+   "source":"(string) CNN",
+   "summary":"(string) Summary for the story ",
    "date_pub":1528552260,
    "date_mod":1528552668,
+   "user_pub":"User ID which publish this story",
+   "user_mod":"User ID which modify this story",
    "status":"published",
-   "content":"<p>Aizu - This is a test content. Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
+   "image_feat":"array of featured images",
+   "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
 ```
 
