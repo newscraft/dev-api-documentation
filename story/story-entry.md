@@ -4,7 +4,7 @@ description: 'This endpoint to retrieve, post and delete story.'
 
 # /story/entry
 
-{% api-method method="get" host="https://api.newscraft.io" path="/v1/story/entry" %}
+{% api-method method="get" host="https://api.newscraft.io/v1" path="/story/entry" %}
 {% api-method-summary %}
 Get stories
 {% endapi-method-summary %}
@@ -92,7 +92,7 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.newscraft.io" path="/v1/story/entry/:id" %}
+{% api-method method="get" host="https://api.newscraft.io/v1" path="/story/entry/:id" %}
 {% api-method-summary %}
 Get single story
 {% endapi-method-summary %}
@@ -103,6 +103,12 @@ Get single story
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Entry ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
 {% api-method-headers %}
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
@@ -170,7 +176,7 @@ If true, the sort is descending. If false, sort is ascending.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.newscraft.io" path="/v1/story/entry" %}
+{% api-method method="post" host="https://api.newscraft.io/v1" path="/story/entry" %}
 {% api-method-summary %}
 Post new story
 {% endapi-method-summary %}
@@ -182,7 +188,7 @@ Post new story
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
@@ -206,7 +212,7 @@ Publisher ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
-Submit with JSON body
+POST with JSON body
 
 ```javascript
 {  
@@ -232,7 +238,7 @@ Submit with JSON body
 }
 ```
 
-{% api-method method="post" host="https://api.newscraft.io" path="/v1/entry/:id" %}
+{% api-method method="post" host="https://api.newscraft.io/v1" path="/story/entry/:id" %}
 {% api-method-summary %}
 Edit existing story
 {% endapi-method-summary %}
@@ -245,7 +251,7 @@ Edit existing story
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-Entry ID provided by system
+Entry ID
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -274,6 +280,8 @@ Publisher ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
+POST with JSON body
+
 ```javascript
 {  
    "sid":"999999",
@@ -298,7 +306,7 @@ Publisher ID
 }
 ```
 
-{% api-method method="delete" host="https://api.newscraft.io" path="/v1/entry/:id" %}
+{% api-method method="delete" host="https://api.newscraft.io/v1" path="/story/entry/:id" %}
 {% api-method-summary %}
 Delete single story
 {% endapi-method-summary %}
@@ -311,7 +319,7 @@ Delete single story
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-
+Entry ID
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -340,28 +348,126 @@ Publisher ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-{% api-method method="get" host="https://api.newscraft.io" path="/v1/entry/search" %}
+{% api-method method="post" host="https://api.newscraft.io/v1" path="/story/entry/:id/autosave" %}
 {% api-method-summary %}
-Search story
+Post autosave
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint is for WYSIWYG HTML editor to post autosave to backend, and update the content for specific entry ID.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Entry ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
 {% api-method-headers %}
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+Publisher ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Will only receive HTML body content.
+
+```markup
+<p>This is updated content.</p>
+```
+
+{% api-method method="get" host="https://api.newscraft.io/v1" path="/story/entry/:id/rev" %}
+{% api-method-summary %}
+Get story revisions
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Get list of story revisions.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Entry ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="x-pub-id" type="string" required=false %}
+Publisher ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://api.newscraft.io/v1" path="/story/entry/:id/rev" %}
+{% api-method-summary %}
+Restore story content from revision
+{% endapi-method-summary %}
+
+{% api-method-description %}
+This action will copy content from revision's copy into entry's content field. The restore action also will update a new revision entry and will be logged.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Entry ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="x-pub-id" type="string" required=false %}
+Publisher ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-api-key" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="q" type="string" required=true %}
-
+{% api-method-parameter name="rev\_id" type="string" required=true %}
+The revision ID to restore from \(32-char\)
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -372,7 +478,49 @@ Search story
 
 {% endapi-method-response-example-description %}
 
-```text
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://api.newscraft.io/v1" path="/story/entry/:id/content" %}
+{% api-method-summary %}
+Get full content
+{% endapi-method-summary %}
+
+{% api-method-description %}
+This full content is intended to be use for WYSIWYG pre-filled. Also, can be use for content processing by other microservices. Not for front-end.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Entry ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+Publisher ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
 
 ```
 {% endapi-method-response-example %}
