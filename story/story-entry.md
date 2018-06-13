@@ -213,21 +213,21 @@ Submit with JSON body
    "sid":"999999",
    "title":"Full title of the story",
    "title_alt":"Alternate title",
-   "feed_id":{["xxxx","yyyy"]}, //array of feed id
-   "cat_id":{["xxxx","yyyy"]}, //array of category id
-   "cat_str":{["news","letters"]}, //array of category name
-   "author_id":{["xxxx","yyyy"]}, //array of author id
-   "author_str":{["Jim","Terry"]}, //array of author name
-   "lang_id":{["xxxx","yyyy"]}, //array of lang id
-   "lang_str":{["en"]}, //array of lang code
-   "source":"(string) CNN",
-   "summary":"(string) Summary for the story ",
+   "feed_id":["xxxx","yyyy"], //array of feed id
+   "cat_id":["xxxx","yyyy"], //array of category id
+   "cat_str":["news","letters"], //array of category name
+   "author_id":["xxxx","yyyy"], //array of author id
+   "author_str":["Jim","Terry"], //array of author name
+   "lang_id":["xxxx","yyyy"], //array of lang id
+   "lang_str":["en"], //array of lang code
+   "source":"CNN",
+   "summary":"Summary for the story ",
    "date_pub":1528552260,
    "date_mod":1528552668,
-   "user_pub":"User ID which publish this story",
-   "user_mod":"User ID which modify this story",
+   "user_pub":"xxxxxx", //User ID which publish this story
+   "user_mod":"xxxxxx", //User ID which modify this story
    "status":"published",
-   "image_feat":"array of featured images",
+   "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
 ```
@@ -279,21 +279,21 @@ Publisher ID
    "sid":"999999",
    "title":"Full title of the story",
    "title_alt":"Alternate title",
-   "feed_id":"array of feed id",
-   "cat_id":"array of category id",
-   "cat_str":"array of category name",
-   "author_id":"array of author_id",
-   "author_str":"array of author name",
-   "lang_id":"array of lang id",
-   "lang_str":"array of lang name",
-   "source":"(string) CNN",
-   "summary":"(string) Summary for the story ",
+   "feed_id":["xxxx","yyyy"], //array of feed id
+   "cat_id":["xxxx","yyyy"], //array of category id
+   "cat_str":["news","letters"], //array of category name
+   "author_id":["xxxx","yyyy"], //array of author id
+   "author_str":["Jim","Terry"], //array of author name
+   "lang_id":["xxxx","yyyy"], //array of lang id
+   "lang_str":["en"], //array of lang code
+   "source":"CNN",
+   "summary":"Summary for the story ",
    "date_pub":1528552260,
    "date_mod":1528552668,
-   "user_pub":"User ID which publish this story",
-   "user_mod":"User ID which modify this story",
+   "user_pub":"xxxxxx", //User ID which publish this story
+   "user_mod":"xxxxxx", //User ID which modify this story
    "status":"published",
-   "image_feat":"array of featured images",
+   "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
 ```
