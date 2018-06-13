@@ -162,7 +162,7 @@ If true, the sort is descending. If false, sort is ascending.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -198,7 +198,7 @@ Post new story
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -208,9 +208,11 @@ Post new story
 
 Submit with JSON body
 
-```text
-{    "sid": "999999",    "title": "Aizu Test",    "cat_str": "news",    "author_str": "Reuters",    "lang_str": "en",    "summary": "Despite Rodman tweeting about impending visit, US president says athlete has not been invited to S&#39;pore. ",    "date_pub": 1528552260,    "date_mod": 1528552668,    "status": "published",    "date_pub_str": "2018-06-09T13:51:00.000Z",    "date_mod_str": "2018-06-09T13:57:48.000Z",    "content": "<p>Aizu - This is a test content. Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"}
+```javascript
+{ "sid":"999999", "title":"Aizu Test", "cat_str":"news", "author_str":"Reuters", "lang_str":"en", "summary":"Despite Rodman tweeting about impending visit, US president says athlete has not been invited to S'pore. ", "date_pub":1528552260, "date_mod":1528552668, "status":"published", "date_pub_str":"2018-06-09T13:51:00.000Z", "date_mod_str":"2018-06-09T13:57:48.000Z", "content":"Aizu - This is a test content. Lorem ipsum dolor sit ametAd cum graeci nostrum." }
 ```
+
+
 
 {% api-method method="post" host="https://api.newscraft.io" path="/v1/entry/:id" %}
 {% api-method-summary %}
@@ -246,7 +248,7 @@ Edit existing story
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -255,7 +257,6 @@ Edit existing story
 {% endapi-method %}
 
 ```text
-
 {    "sid": "999999",    "title": "Aizu Test",    "cat_str": "news",    "author_str": "Reuters",    "lang_str": "en",    "summary": "Despite Rodman tweeting about impending visit, US president says athlete has not been invited to S&#39;pore. ",    "date_pub": 1528552260,    "date_mod": 1528552668,    "status": "published",    "date_pub_str": "2018-06-09T13:51:00.000Z",    "date_mod_str": "2018-06-09T13:57:48.000Z",    "content": "<p>Aizu - This is a test content. Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"}
 ```
 
@@ -289,7 +290,7 @@ Delete single story
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -329,13 +330,11 @@ Search story
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

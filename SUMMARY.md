@@ -2,12 +2,12 @@
 
 * [Developer API](README.md)
 * [/story](story/README.md)
-  * [/story/entry](story/entry.md)
+  * [/story/entry](story/story-entry.md)
 * [/media](media.md)
-* [/interact](interaction/README.md)
-  * [/interact/comment](interaction/comment-api.md)
-* [/template](template-manager.md)
-* [/ingest](ingest-manager.md)
-* [/output](output-manager.md)
+* [/interact](interact/README.md)
+  * [/interact/comment](interact/interact-comment.md)
+* [/template](template.md)
+* [/ingest](ingest.md)
+* [/output](output.md)
 * [/search/entry](search-entry.md)
 

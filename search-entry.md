@@ -1,7 +1,3 @@
----
-description: Full text search service for entry contents.
----
-
 # /search/entry
 
 {% api-method method="get" host="https://api.newscraft.io" path="/v1/search/entry" %}
