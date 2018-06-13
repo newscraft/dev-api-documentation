@@ -34,8 +34,15 @@ Publisher ID
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+    "items":
+        [
+            "xxx",
+            "yyy",
+            "zzz"
+        ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
