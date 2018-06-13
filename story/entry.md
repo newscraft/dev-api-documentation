@@ -5,9 +5,9 @@ description: 'This endpoint to retrieve, post and delete story.'
 # /story/entry
 
 {% api-method method="get" host="https://api.newscraft.io" path="/v1/story/entry" %}
-	{% api-method-summary %}
-		Get stories
-	{% endapi-method-summary %}
+{% api-method-summary %}
+Get stories
+{% endapi-method-summary %}
 
 {% api-method-description %}
 This endpoint allows you to get entry.
