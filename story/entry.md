@@ -104,18 +104,54 @@ Get single story
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="x-api-key" type="string" required=true %}
-API key provided by platform provider.I
+API key provided by platform provider.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="id" type="string" required=false %}
+The entry ID provided by system. 32-char
+{% endapi-method-parameter %}
 
+{% api-method-parameter name="sid" type="string" required=false %}
+Custom ID which stored during POST
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="limit" type="number" required=false %}
+Default, limit is 50 \(maximum\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="offset" type="number" required=false %}
+Default, start from 0
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="feed\_id" type="string" required=false %}
+32-char
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="cat\_id" type="string" required=false %}
+32-char
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="lang\_id" type="string" required=false %}
+32-char
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="author\_id" type="string" required=false %}
+32-char
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sort" type="string" required=false %}
+Default, date\_pub. Possible value: date\_pub, date\_mode, title
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sort\_desc" type="boolean" required=false %}
+If true, the sort is descending. If false, sort is ascending.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
