@@ -10,4 +10,5 @@
 * [/ingest](ingest.md)
 * [/output](output.md)
 * [/search/entry](search-entry.md)
+* [/story/feed](story-feed.md)
 
