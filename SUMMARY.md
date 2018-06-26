@@ -4,7 +4,7 @@
 * [/story](story/README.md)
   * [/story/entry](story/entry.md)
   * [/story/feed](story/feed.md)
-* [/media](media.md)
+* [/assets](media.md)
 * [/interact](interact/README.md)
   * [/interact/comment](interact/interact-comment.md)
 * [/template](template.md)
