@@ -268,7 +268,7 @@ API Key provided by platform provider.
 
 {% api-method method="post" host="https://api.newscraft.io" path="/v1/assets/dir-create/" %}
 {% api-method-summary %}
-Create directory of folder
+Create directory
 {% endapi-method-summary %}
 
 {% api-method-description %}
