@@ -16,6 +16,10 @@ This endpoint allows you to get entry.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
@@ -110,6 +114,10 @@ Entry ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
@@ -188,6 +196,10 @@ Post new story
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
@@ -221,18 +233,24 @@ POST with JSON body
    "title_alt":"Alternate title",
    "feed_id":["xxxx","yyyy"], //array of feed id
    "cat_id":["xxxx","yyyy"], //array of category id
-   "cat_str":["news","letters"], //array of category name
+   "cat":["news","letters"], //array of category name
    "author_id":["xxxx","yyyy"], //array of author id
-   "author_str":["Jim","Terry"], //array of author name
+   "author":["Jim","Terry"], //array of author name
    "lang_id":["xxxx","yyyy"], //array of lang id
-   "lang_str":["en"], //array of lang code
+   "lang":["en"], //array of lang code
    "source":"CNN",
    "summary":"Summary for the story ",
    "date_pub":1528552260,
    "date_mod":1528552668,
    "user_pub":"xxxxxx", //User ID which publish this story
    "user_mod":"xxxxxx", //User ID which modify this story
-   "status":"published",
+   "status": 1,
+   // 0. deleted
+   // 1. published
+   // 2. draft
+   // 3. pending review
+   // 4. reviewed
+   // 5. trash 
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
