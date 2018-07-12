@@ -250,7 +250,6 @@ POST with JSON body
    // 2. draft
    // 3. pending review
    // 4. reviewed
-   // 5. trash 
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
@@ -322,7 +321,12 @@ POST with JSON body
    "date_mod":1528552668,
    "user_pub":"xxxxxx", //User ID which publish this story
    "user_mod":"xxxxxx", //User ID which modify this story
-   "status":"published",
+   "status": 1,
+   // 0. deleted
+   // 1. published
+   // 2. draft
+   // 3. pending review
+   // 4. reviewed
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
