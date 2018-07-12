@@ -8,7 +8,7 @@ Don't get confuse with RSS feed or data feed. \(We are lack of terms. Lucky we d
 
 {% api-method method="get" host="https://api.newscraft.io" path="/v1/story/feed" %}
 {% api-method-summary %}
-Get list of story feeds
+Get list of feeds
 {% endapi-method-summary %}
 
 {% api-method-description %}
