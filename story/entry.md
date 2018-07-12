@@ -274,6 +274,10 @@ Entry ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
@@ -307,11 +311,11 @@ POST with JSON body
    "title_alt":"Alternate title",
    "feed_id":["xxxx","yyyy"], //array of feed id
    "cat_id":["xxxx","yyyy"], //array of category id
-   "cat_str":["news","letters"], //array of category name
+   "cat":["news","letters"], //array of category name
    "author_id":["xxxx","yyyy"], //array of author id
-   "author_str":["Jim","Terry"], //array of author name
+   "author":["Jim","Terry"], //array of author name
    "lang_id":["xxxx","yyyy"], //array of lang id
-   "lang_str":["en"], //array of lang code
+   "lang":["en"], //array of lang code
    "source":"CNN",
    "summary":"Summary for the story ",
    "date_pub":1528552260,
@@ -342,7 +346,11 @@ Entry ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
@@ -384,6 +392,10 @@ Entry ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
@@ -432,7 +444,11 @@ Entry ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
@@ -474,7 +490,11 @@ Entry ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
@@ -522,6 +542,10 @@ Entry ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+{% api-method-parameter name="x-propert-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
