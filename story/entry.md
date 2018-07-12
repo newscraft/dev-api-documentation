@@ -30,6 +30,10 @@ API key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="status" type="string" required=false %}
+1
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="id" type="string" required=false %}
 The entry ID provided by system. 32-char
 {% endapi-method-parameter %}
