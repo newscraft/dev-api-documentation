@@ -251,11 +251,14 @@ POST with JSON body
 
 ```javascript
 {
-    "items":
-        [
-            "xxx",
-            "yyy",
-            "zzz"
+    "items": [
+        "1aad71b0e77c036fab8936eec49300b9", // entry ID
+        "fb0a3e5bca259b108efeca5362d39642",
+        "7701b2b5956aea60e937407223507465",
+        "62a3486ea1519ffd66de342bec2859e4",
+        "7cb7726f0a8c362118848e5e8981a32a",
+        "0b536b0aff8759aa726fc87cb71bf45e",
+        "b1d8af089f014c8bf04709e10d7d76d3"
         ]
 }
 ```
