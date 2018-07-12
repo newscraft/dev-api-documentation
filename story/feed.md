@@ -140,6 +140,46 @@ Publisher ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="delete" host="https://api.newscraft.io" path="/v1/story/feed/:id" %}
+{% api-method-summary %}
+Delete feed
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 POST with JSON body
 
 ```javascript
