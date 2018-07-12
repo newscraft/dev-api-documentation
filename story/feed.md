@@ -18,7 +18,11 @@ Get list of story feeds
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
@@ -54,7 +58,11 @@ Add new feed
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
@@ -104,6 +112,10 @@ Feed ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
@@ -154,7 +166,11 @@ Feed ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
@@ -185,7 +201,7 @@ Publisher ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.newscraft.io" path="/v1/story/feed/:id" %}
+{% api-method method="post" host="https://api.newscraft.io" path="/v1/story/feed/:id/sort" %}
 {% api-method-summary %}
 Submit stories for feed
 {% endapi-method-summary %}
@@ -203,7 +219,11 @@ Feed ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="x-pub-id" type="string" required=false %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
 Publisher ID
 {% endapi-method-parameter %}
 
