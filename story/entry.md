@@ -30,7 +30,7 @@ API key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="free" type="string" required=false %}
+{% api-method-parameter name="free" type="boolean" required=false %}
 true or false
 {% endapi-method-parameter %}
 
