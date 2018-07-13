@@ -30,6 +30,10 @@ API key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="free" type="string" required=false %}
+true or false
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="status" type="string" required=false %}
 1
 {% endapi-method-parameter %}
@@ -248,6 +252,9 @@ POST with JSON body
    "date_mod":1528552668,
    "user_pub":"xxxxxx", //User ID which publish this story
    "user_mod":"xxxxxx", //User ID which modify this story
+   "free": true | false,
+   "tags": ["world", "news"],
+   "reviewed_by": ["Andrew"],
    "status": 1,
    // 0. deleted
    // 1. published
@@ -325,6 +332,9 @@ POST with JSON body
    "date_mod":1528552668,
    "user_pub":"xxxxxx", //User ID which publish this story
    "user_mod":"xxxxxx", //User ID which modify this story
+   "free": true | false,
+   "tags": ["world", "news"],
+   "reviewed_by": ["Andrew"],
    "status": 1,
    // 0. deleted
    // 1. published
