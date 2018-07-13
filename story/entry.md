@@ -478,6 +478,52 @@ Publisher ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="delete" host="https://api.newscraft.io" path="/v1/story/cat/:id" %}
+{% api-method-summary %}
+Delete Category
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+category ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+Publisher ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="post" host="https://api.newscraft.io" path="/v1/story/cat/" %}
 {% api-method-summary %}
 Post New Category
