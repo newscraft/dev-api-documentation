@@ -35,7 +35,12 @@ true or false
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="string" required=false %}
-1
+0. Trash  
+1. Published  
+2. Draft  
+3. Pending Review  
+4. Reviewed  
+5. Permanently Delete  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="string" required=false %}
@@ -256,11 +261,12 @@ POST with JSON body
    "tags": ["world", "news"],
    "reviewed_by": ["Andrew"],
    "status": 1,
-   // 0. deleted
+   // 0. trash
    // 1. published
    // 2. draft
    // 3. pending review
    // 4. reviewed
+   // 5. permanently delete
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
@@ -341,6 +347,7 @@ POST with JSON body
    // 2. draft
    // 3. pending review
    // 4. reviewed
+   // 5. permanently delete
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
@@ -376,6 +383,12 @@ Publisher ID
 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="permanently" type="boolean" required=false %}
+true \| false
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
