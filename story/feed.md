@@ -70,6 +70,16 @@ Publisher ID
 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="slug" type="string" required=false %}
+Slug name
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=true %}
+Feed name
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -85,14 +95,6 @@ Publisher ID
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-POST with JSON body
-
-```javascript
-{
-    "name": "Home"
-}
-```
 
 {% api-method method="post" host="https://api.newscraft.io" path="/v1/story/feed/:id" %}
 {% api-method-summary %}
@@ -124,6 +126,16 @@ Publisher ID
 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="slug" type="string" required=false %}
+slug
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=true %}
+Feed name
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -151,13 +163,19 @@ Delete feed
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Slug ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
 {% api-method-headers %}
 {% api-method-parameter name="x-property-id" type="string" required=true %}
-
+Property ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
-
+Publish ID
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="x-api-key" type="string" required=true %}
@@ -179,14 +197,6 @@ Delete feed
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-POST with JSON body
-
-```javascript
-{
-    "name": "Utama"
-}
-```
 
 {% api-method method="get" host="https://api.newscraft.io" path="/v1/story/feed/:id/sort" %}
 {% api-method-summary %}
