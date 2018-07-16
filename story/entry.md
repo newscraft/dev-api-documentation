@@ -843,3 +843,109 @@ Publisher ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://api.newscraft.io/v1" path="/story/entry/setting" %}
+{% api-method-summary %}
+Post stories setting
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="schedule" type="boolean" required=false %}
+true \| false
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="comment" type="boolean" required=false %}
+true \| false
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="tag" type="boolean" required=false %}
+true \| false
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="wide\_width" type="integer" required=false %}
+1500. maybe in px.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="access" type="string" required=false %}
+free \| paid
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="categories" type="array" required=false %}
+\["News", "Letters"\]
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://api.newscraft.io/v1" path="/story/entry/setting" %}
+{% api-method-summary %}
+Get stories setting
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
