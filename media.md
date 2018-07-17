@@ -538,3 +538,177 @@ API Key provided by platform provider.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://api.newscraft.io" path="/v1/assets/setting" %}
+{% api-method-summary %}
+Post setting
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+JSON body format
+
+```javascript
+{
+    "images": {
+        "max_size_upload": 5000,
+        "keyword": true,
+        "folder_path": "host"
+    },
+    "videos": {
+        "allow": true,
+        "max_size_upload": 250000,
+        "keyword": true,
+        "folder_path": "host"
+    },
+    "others": {
+        "allow": true,
+        "file_format": ["pdf", "mp3", "mp4", "doc", "csv"],
+        "keyword": true,
+        "folder_path": "host"
+    }
+}
+```
+
+{% api-method method="post" host="https://api.newscraft.io" path="/v1/assets/setting/:id" %}
+{% api-method-summary %}
+Update setting
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Setting ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+JSON body format
+
+```javascript
+{
+    "images": {
+        "max_size_upload": 5000,
+        "keyword": true,
+        "folder_path": "host"
+    },
+    "videos": {
+        "allow": true,
+        "max_size_upload": 250000,
+        "keyword": true,
+        "folder_path": "host"
+    },
+    "others": {
+        "allow": true,
+        "file_format": ["pdf", "mp3", "mp4", "doc", "csv"],
+        "keyword": true,
+        "folder_path": "host"
+    }
+}
+```
+
+{% api-method method="get" host="https://api.newscraft.io" path="/v1/assets/setting" %}
+{% api-method-summary %}
+Get setting
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
