@@ -30,18 +30,6 @@ API key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="search" type="string" required=false %}
-Search by story title. For now.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="date\_to" type="string" required=false %}
-mm/dd/yyyy \( 07/16/2018 \)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="date\_from" type="string" required=false %}
-mm/dd/yyyy \( 07/16/2018 \)
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="free" type="boolean" required=false %}
 true or false
 {% endapi-method-parameter %}
