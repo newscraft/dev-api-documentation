@@ -26,6 +26,14 @@ Publisher ID
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="sort\_desc" type="boolean" required=false %}
+true \| false
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sort" type="string" required=false %}
+Default: date\_pub, support: date\_pub, date\_mod, title
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="q" type="string" required=false %}
 string - story title \(for now\)
 {% endapi-method-parameter %}
