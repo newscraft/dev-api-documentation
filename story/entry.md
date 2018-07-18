@@ -76,7 +76,7 @@ Default, start from 0
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort" type="string" required=false %}
-Default, date\_pub. Possible value: date\_pub, date\_mode, title
+Default, date\_pub. Possible value: date\_pub, date\_mod, title
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort\_desc" type="boolean" required=false %}
@@ -174,7 +174,7 @@ Default, start from 0
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort" type="string" required=false %}
-Default, date\_pub. Possible value: date\_pub, date\_mode, title
+Default, date\_pub. Possible value: date\_pub, date\_mod, title
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort\_desc" type="boolean" required=false %}
