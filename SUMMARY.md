@@ -10,5 +10,6 @@
 * [/template](template.md)
 * [/ingest](ingest.md)
 * [/output](output.md)
-* [/search/entry](search-entry.md)
+* [/search/entry](search/README.md)
+  * [Untitled](search/entry.md)
 
