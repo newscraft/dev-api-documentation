@@ -27,7 +27,7 @@ Publisher ID
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="sort\_desc" type="boolean" required=false %}
-true \| false
+true \(descending\) \| false \(ascending\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort" type="string" required=false %}
