@@ -554,10 +554,6 @@ Post setting
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="x-pub-id" type="string" required=true %}
-
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="x-api-key" type="string" required=true %}
 
 {% endapi-method-parameter %}
@@ -620,10 +616,6 @@ Setting ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="x-property-id" type="string" required=true %}
-
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 
 {% endapi-method-parameter %}
@@ -684,10 +676,6 @@ Get setting
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="x-property-id" type="string" required=true %}
-
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="x-pub-id" type="string" required=true %}
 
 {% endapi-method-parameter %}
