@@ -253,6 +253,7 @@ POST with JSON body
    "lang":["en"], //array of lang code
    "source":"CNN",
    "summary":"Summary for the story ",
+   "currently_editing": "aliff@malaysiakini.com",
    "date_pub":1528552260,
    "date_mod":1528552668,
    "user_pub":"xxxxxx", //User ID which publish this story
