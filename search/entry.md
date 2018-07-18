@@ -30,16 +30,21 @@ Publisher ID
 string - story title \(for now\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="date\_from" type="integer" required=false %}
+{% api-method-parameter name="date\_from" type="number" required=false %}
 timestamp: 1531391894
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="date\_to" type="integer" required=false %}
+{% api-method-parameter name="date\_to" type="number" required=false %}
 timestamp: 1531448643
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="status" type="string" required=false %}
-
+{% api-method-parameter name="status" type="number" required=false %}
+0. trash  
+1. published  
+2. draft  
+3. pending review  
+4. reviewed  
+5. permanently delete
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
