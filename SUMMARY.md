@@ -12,4 +12,5 @@
 * [/output](output.md)
 * [/search](search/README.md)
   * [/search/entry](search/entry.md)
+  * [/search/asset](search/search-asset.md)
 
