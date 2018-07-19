@@ -41,11 +41,11 @@ name
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="filetype" type="string" required=false %}
-image/jpeg,  
-audio/mp3,  
-application/pdf,  
-text/html,  
-application/msword
+image,  
+audio,  
+application,  
+text,   
+etc..
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="number" required=false %}
