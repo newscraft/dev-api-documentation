@@ -26,8 +26,12 @@ API key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="limit" type="integer" required=false %}
-100
+{% api-method-parameter name="limit" type="number" required=false %}
+Default 100 list 
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sort\_desc" type="boolean" required=false %}
+true \(descending\) \| false \(ascending\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort" type="string" required=false %}
@@ -44,7 +48,7 @@ text/html,
 application/msword
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="status" type="integer" required=false %}
+{% api-method-parameter name="status" type="number" required=false %}
 1 \| 0
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
