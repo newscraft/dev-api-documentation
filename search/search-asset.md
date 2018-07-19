@@ -26,6 +26,18 @@ Search Asset item
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="folder\_id" type="string" required=false %}
+Folder ID.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="filetype" type="string" required=false %}
+image,  
+audio,  
+text,  
+application,  
+etc..
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="status" type="number" required=false %}
 0. trash  
 1. published \(default\)
