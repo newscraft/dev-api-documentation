@@ -13,4 +13,5 @@
 * [/search](search/README.md)
   * [/search/entry](search/entry.md)
   * [/search/asset](search/search-asset.md)
+  * [/search/comment](search/search-comment.md)
 
