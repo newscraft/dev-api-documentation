@@ -51,8 +51,8 @@ default 100
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="number" required=false %}
-0. Hide  
-2. Show \(default\)
+0. Trash  
+2. Published \(default\)
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -123,7 +123,7 @@ Default 100
 
 {% api-method-parameter name="status" type="string" required=false %}
 0. Hide  
-2. Show \(default\)
+1. Show \(default\)
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
