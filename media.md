@@ -25,17 +25,17 @@ API key provided by platform provider.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="limit" type="number" required=false %}
-Default 100 list 
+{% api-method-query-parameters %}
+{% api-method-parameter name="limit" type="string" required=false %}
+Default 100
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="sort\_desc" type="boolean" required=false %}
+{% api-method-parameter name="sort\_desc" type="string" required=false %}
 true \(descending\) \| false \(ascending\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort" type="string" required=false %}
-date\_pub \( default \),  
+date\_pub \(default\),  
 date\_mod,  
 name
 {% endapi-method-parameter %}
@@ -44,14 +44,14 @@ name
 image,  
 audio,  
 application,  
-text,   
+text,  
 etc..
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="number" required=false %}
 1 \| 0
 {% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
