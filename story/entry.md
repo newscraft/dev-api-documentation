@@ -246,7 +246,6 @@ POST with JSON body
    "title_alt":"Alternate title",
    "feed_id":["xxxx","yyyy"], //array of feed id
    "cat_id":["xxxx","yyyy"], //array of category id
-   "cat":["news","letters"], //array of category name
    "author_id":["xxxx","yyyy"], //array of author id
    "author":["Jim","Terry"], //array of author name
    "lang_id":["xxxx","yyyy"], //array of lang id
@@ -328,7 +327,6 @@ POST with JSON body
    "title_alt":"Alternate title",
    "feed_id":["xxxx","yyyy"], //array of feed id
    "cat_id":["xxxx","yyyy"], //array of category id
-   "cat":["news","letters"], //array of category name
    "author_id":["xxxx","yyyy"], //array of author id
    "author":["Jim","Terry"], //array of author name
    "lang_id":["xxxx","yyyy"], //array of lang id
