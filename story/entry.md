@@ -741,7 +741,7 @@ Restore story content from revision
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This action will copy content from revision's copy into entry's content field. The restore action also will update a new revision entry and will be logged.
+Caution: This action will copy content from revision's copy into entry's content field. The restore action also will update a new revision entry and will be logged.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -766,11 +766,11 @@ Publisher ID
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
-{% api-method-query-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="rev\_id" type="string" required=true %}
-The revision ID to restore from \(32-char\)
+The revision ID to restore
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
