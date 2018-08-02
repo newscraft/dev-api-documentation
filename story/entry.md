@@ -44,6 +44,7 @@ true or false
 6. Update \(for revision\)  
 7. Autosave  
 8. Unpublished  
+9. Schedule  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="string" required=false %}
@@ -274,6 +275,7 @@ POST with JSON body
    // 6. update (for revision)
    // 7. autosave
    // 8. unpublished
+   // 9. Schedule
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
@@ -359,6 +361,7 @@ POST with JSON body
    // 6. update (for revision)
    // 7. autosave
    // 8. unpublished
+   // 9. Schedule
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
@@ -868,10 +871,6 @@ Post stories setting
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="schedule" type="boolean" required=false %}
-true \| false
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="comment" type="boolean" required=false %}
 true \| false
 {% endapi-method-parameter %}
