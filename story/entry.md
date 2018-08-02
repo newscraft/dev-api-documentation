@@ -41,6 +41,9 @@ true or false
 3. Pending Review  
 4. Reviewed  
 5. Permanently Delete  
+6. Update \(for revision\)  
+7. Autosave  
+8. Unpublished  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="string" required=false %}
@@ -268,6 +271,9 @@ POST with JSON body
    // 3. pending review
    // 4. reviewed
    // 5. permanently delete
+   // 6. update (for revision)
+   // 7. autosave
+   // 8. unpublished
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
@@ -350,6 +356,9 @@ POST with JSON body
    // 3. pending review
    // 4. reviewed
    // 5. permanently delete
+   // 6. update (for revision)
+   // 7. autosave
+   // 8. unpublished
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
