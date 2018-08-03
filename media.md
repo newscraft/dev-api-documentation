@@ -332,8 +332,8 @@ API Key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="favourite" type="string" required=false %}
-True \| False
+{% api-method-parameter name="favourite" type="boolean" required=false %}
+true \| false
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=false %}
@@ -480,8 +480,8 @@ API Key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="favourite" type="string" required=false %}
-True \| False
+{% api-method-parameter name="favourite" type="boolean" required=false %}
+true \| false
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=false %}
