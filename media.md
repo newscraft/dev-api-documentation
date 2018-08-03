@@ -332,7 +332,11 @@ API Key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="name" type="string" required=true %}
+{% api-method-parameter name="favourite" type="string" required=false %}
+True \| False
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=false %}
 Folder name.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -475,11 +479,15 @@ API Key provided by platform provider.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="name" type="string" required=true %}
-Folder or  Directory name.
+{% api-method-body-parameters %}
+{% api-method-parameter name="favourite" type="string" required=false %}
+True \| False
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+
+{% api-method-parameter name="name" type="string" required=false %}
+Folder name
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
