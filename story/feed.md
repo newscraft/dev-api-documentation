@@ -313,3 +313,101 @@ POST with JSON body
 }
 ```
 
+{% api-method method="get" host="https://api.newscraft.io" path="/v1/story/feed/:id/rev" %}
+{% api-method-summary %}
+Get feed revision
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Display feed revision
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Feed ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+Publisher ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://api.newscraft.io" path="/v1/story/feed/:id/rev" %}
+{% api-method-summary %}
+Restore feed revision
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Caution: Action will be automatically replace stories list in feed
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Feed ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="x-property-id" type="string" required=true %}
+Property ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-pub-id" type="string" required=true %}
+Publisher ID
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="x-api-key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="rev\_id" type="string" required=true %}
+Revision ID
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
