@@ -26,6 +26,10 @@ API key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="folder\_id" type="string" required=false %}
+Folder ID
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="limit" type="string" required=false %}
 Default 100
 {% endapi-method-parameter %}
