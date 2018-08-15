@@ -488,6 +488,10 @@ API Key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="parent\_id" type="string" required=false %}
+Parent ID.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="favourite" type="boolean" required=false %}
 true \| false
 {% endapi-method-parameter %}
