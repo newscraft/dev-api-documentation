@@ -32,6 +32,10 @@ This endpoint allows you to get free cakes.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="limit" type="number" required=false %}
+100 \(default\)
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="sort\_desc" type="boolean" required=false %}
 true \(descending\) \| false \(ascending\)
 {% endapi-method-parameter %}
@@ -115,6 +119,10 @@ Get Comment List
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="limit" type="number" required=false %}
+100 \(default\)
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="sort\_desc" type="boolean" required=false %}
 true \(descending\) \| false \(ascending\)
 {% endapi-method-parameter %}
