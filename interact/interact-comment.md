@@ -349,3 +349,77 @@ Report ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://api.newscraft.io" path="/v1/interact/comment/count" %}
+{% api-method-summary %}
+GET comment count by all story
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="sort\_desc" type="boolean" required=false %}
+true \| false
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sort" type="string" required=false %}
+total
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="limit" type="number" required=false %}
+100 \(default\)
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://api.newscraft.io" path="/v1/interact/comment/count/:sid" %}
+{% api-method-summary %}
+GET comment count by particular story
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="sid" type="number" required=true %}
+story ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
