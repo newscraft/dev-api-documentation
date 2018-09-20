@@ -257,7 +257,7 @@ POST with JSON body
    "source":"CNN",
    "summary":"Summary for the story ",
    "currently_editing": "aliff@malaysiakini.com", // username
-   "teaser_num": 2,
+   "teaser": "Teaser of story",
    "date_pub":1528552260,
    "date_mod":1528552668,
    "user_pub":"xxxxxx", //User ID which publish this story
