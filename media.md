@@ -26,26 +26,42 @@ API key provided by platform provider.
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="date\_start" type="string" required=false %}
+\(only for MK publisher\) date when the image published
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="date\_end" type="string" required=false %}
+\(only for MK publisher\) date-end when the image published - use together with date\_start
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="keyword" type="string" required=false %}
+\(only for MK publisher\) description search
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="cursor\_start" type="string" required=false %}
+\(only for MK publisher\) next cursor string. provided by previous "page" call
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="folder\_id" type="string" required=false %}
-Folder ID
+Folder ID \(for MK publisher, folder id for recent images is "recent"\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="string" required=false %}
-Default 100
+\(not available for MK publisher\) Default 100
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort\_desc" type="string" required=false %}
-true \(descending\) \| false \(ascending\)
+\(not available for MK publisher\) true \(descending\) \| false \(ascending\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort" type="string" required=false %}
-date\_pub \(default\),  
+\(not available for MK publisher\) date\_pub \(default\),  
 date\_mod,  
 name
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="filetype" type="string" required=false %}
-image,  
+\(not available for MK publisher\) image,  
 audio,  
 application,  
 text,  
@@ -53,7 +69,7 @@ etc..
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="number" required=false %}
-1 \| 0
+\(not available for MK publisher\) 1 \| 0
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
