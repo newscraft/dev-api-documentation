@@ -47,7 +47,7 @@ Folder ID \(for MK publisher, folder id for recent images is "recent"\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="string" required=false %}
-\(not available for MK publisher\) Default 100
+\(MK publisher will show default 200 items\) Default 100
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sort\_desc" type="string" required=false %}
