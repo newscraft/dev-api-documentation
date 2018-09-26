@@ -61,14 +61,72 @@ etc..
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+Successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```javascript
 {
-    "name": "Cake's name",
-    "recipe": "Cake's recipe name",
-    "cake": "Binary cake"
+	"status": true,
+	"message": null,
+	"result": [
+		{
+			"id": "53ccedfa2596cf802cbbec3feba3d6b5",
+			"type": "image/png",
+			"name": "Screen Shot 2018-08-28 at 1.08.19 PM.png-(edited on 20180925040707)",
+			"description": "",
+			"keyword": "",
+			"user_pub": "eshwaren@malaysiakini.com",
+			"folder_id": "ac2938d1999d70e6c12240e2d2111111",
+			"date_pub": 1537848428,
+			"date_mod": 1537848428,
+			"user_mod": "",
+			"status": 1,
+			"img_o": {
+				"id": "53ccedfa2596cf802cbbec3feba3d6b5-original.png",
+				"hostname": "https://assets.newscraft.io/host/",
+				"contentLength": 29065,
+				"width": 441,
+				"height": 100
+			},
+			"file": {
+				"id": "53ccedfa2596cf802cbbec3feba3d6b5-original.png",
+				"hostname": "https://assets.newscraft.io/host/",
+				"contentLength": 29065,
+				"width": 441,
+				"height": 100
+			},
+			"img_l": {
+				"id": "53ccedfa2596cf802cbbec3feba3d6b5-large.png",
+				"hostname": "https://assets.newscraft.io/host/",
+				"contentLength": 144340,
+				"width": 1024,
+				"height": null
+			},
+			"img_m": {
+				"id": "53ccedfa2596cf802cbbec3feba3d6b5-medium.png",
+				"hostname": "https://assets.newscraft.io/host/",
+				"contentLength": 17187,
+				"width": 300,
+				"height": null
+			},
+			"img_s": {
+				"id": "53ccedfa2596cf802cbbec3feba3d6b5-small.png",
+				"hostname": "https://assets.newscraft.io/host/",
+				"contentLength": 2957,
+				"width": 50,
+				"height": 50
+			},
+			"img_t": {
+				"id": "53ccedfa2596cf802cbbec3feba3d6b5-thumb.png",
+				"hostname": "https://assets.newscraft.io/host/",
+				"contentLength": 3120,
+				"width": 100,
+				"height": null
+			},
+			"original_name": "e93cf98166428063ae4ff226fc9e63ad",
+			"contentLength": 29065
+		}
+	]
 }
 ```
 {% endapi-method-response-example %}
@@ -80,7 +138,9 @@ Could not find a cake matching this query.
 
 ```javascript
 {
-    "message": "Ain't no cake like that."
+	"status": false,
+	"message": "NO RESULT",
+	"result": null
 }
 ```
 {% endapi-method-response-example %}
