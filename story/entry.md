@@ -277,6 +277,7 @@ POST with JSON body
    // 8. unpublished
    // 9. Schedule
    "image_feat":["http://i.image.com/1.jpg","http://i.image.com/2.jpg"],
+   "related":["{entry_id}","{entry_id}"],
    "content":"<p>Lorem ipsum dolor sit amet</p><p>Ad cum graeci nostrum.</p>"
 }
 ```
