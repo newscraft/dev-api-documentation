@@ -72,7 +72,7 @@ Publisher ID
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="slug" type="string" required=false %}
+{% api-method-parameter name="label" type="string" required=false %}
 Slug name
 {% endapi-method-parameter %}
 
